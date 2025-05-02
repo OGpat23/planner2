@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 import plotly.express as px
 import plotly.graph_objects as go
 from datetime import date, datetime, timedelta
+import pytz
 import os
 import json
 
@@ -195,7 +196,8 @@ st.sidebar.write(f"**CP1 Paper 2:** {EXAM_PAPER_2_DATE.strftime('%A, %B %d, %Y')
 st.sidebar.divider()
 
 # Get current date (with option to override for testing)
-today = date.today()
+mauritius_tz = pytz.timezone("Indian/Mauritius")
+today = datetime.now(mauritius_tz).date()
 if st.session_state.active_tab in ["Daily Tracker", "Progress Analytics"]:
     selected_date = st.sidebar.date_input("Select Date", value=today, 
                                          min_value=date(2025, 1, 1), 
