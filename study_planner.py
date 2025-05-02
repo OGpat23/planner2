@@ -23,8 +23,8 @@ phases = [
         "end_date": date(2025, 5, 31),
         "focus": "Cover core syllabus topics. Build strong fundamentals.",
         "availability": "Full-time work (Mon-Fri, 8am-5pm)",
-        "target_hours_min": 85,
-        "target_hours_max": 100,
+        "target_hours_min": 60,
+        "target_hours_max": 80,
         "study_leave_days_per_week": 0,
     },
     {
@@ -45,7 +45,7 @@ phases = [
         "availability": "Full-time work (Mon-Fri, 8am-5pm)",
         "target_hours_min": 50,
         "target_hours_max": 60,
-        "study_leave_days_per_week": 0,
+        "study_leave_days_per_week": 2,
     },
     {
         "name": "Phase 4: Intense Practice & Revision",
